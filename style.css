@@ -151,9 +151,9 @@
     transition: width 0.2s ease-in;
   }
   
-  /* .volume-bar:hover {
-     background: var(--primary-color); 
-  } */
+  .volume-bar:hover {
+     /* background: var(--primary-color);  */
+  }
   
   /* Right Controls ---------------------------- */
   .controls-right {
