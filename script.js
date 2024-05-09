@@ -18,9 +18,10 @@ const playOrPuseVideo = () => {
 }
 
 const updateProgressbar = (event) => {
-    console.log(event.target.currentTime, event.target.duration);
+    let currentTime = event.target.currentTime;
+    let duration = event.target.duration;
     progressBar.style.cssText = `
-        width: ${event.target.currentTime}%
+        width: ${(currentTime / duration) * 100}%
     `
 }
 
