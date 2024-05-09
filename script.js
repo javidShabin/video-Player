@@ -1,6 +1,5 @@
 let playBtn = document.getElementById("play-btn");
 let video = document.querySelector(".video");
-let videoBtn = document.getElementById("play-btn");
 
 let isVideoPlaying = false;
 
@@ -8,10 +7,11 @@ const playOrPuseVideo = () => {
     if (!isVideoPlaying) {
         video.play()
         isVideoPlaying = true;
-
+        playBtn.classList.replace("fa-play", "fa-pause");
     }else {
         video.pause()
         isVideoPlaying = false;
+        playBtn.classList.replace("fa-pause", "fa-play")
     }
 }
 
